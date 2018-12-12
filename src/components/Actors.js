@@ -4,7 +4,9 @@ import { actors } from '../data';
 const Actors = () => {
   return (
     <div>
-      {/*{code here}*/}
+      <h1>Actors Page</h1>
+       {actors.map((actor, i) => <div className="actor"  obj={actor.name} movies={actor.movies} key={i} />)}
+
     </div>
   );
 };
