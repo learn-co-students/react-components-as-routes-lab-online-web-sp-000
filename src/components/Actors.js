@@ -1,12 +1,26 @@
-import React from 'react';
-import { actors } from '../data';
+import React from "react";
+import { actors } from "../data";
 
 const Actors = () => {
   return (
     <div>
-      {/*{code here}*/}
+      Actors Page
+      {actors.map(actor => (
+        <div>
+          {actor.name}
+          <ul>
+            {actor.movies.map(movie => (
+              <li>{movie}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </div>
   );
 };
 
 export default Actors;
+
+// This component should render the text Actors Page, and make a new < div >
+// for each actor.The < div > should contain the actor's name and an <ul> for
+// each of their movies.
