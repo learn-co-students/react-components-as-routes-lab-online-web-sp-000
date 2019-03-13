@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const NavBar = props => (
-  <div class="navBar">
+  <div className="navBar">
     <ul>
       {props.routes.map((page, i) => (
         <li key={i.toString()}>
