@@ -6,7 +6,7 @@ import Movies from "../components/Movies";
 import Directors from "../components/Directors";
 import Actors from "../components/Actors";
 
-const App = (props) => {
+const App = () => {
 
 	return (
 		<Router>
