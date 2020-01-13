@@ -5,9 +5,17 @@ const Actors = () => {
   return (
     <div>
       <h1>Actors Page</h1>
-        <ul>
-          {actors.map(actor => console.log(`<div className="actor">${actor.name}</div>`))}
-        </ul>
+          {actors.map(actor => ( 
+            <div>
+              {actor.name}
+              <ul>
+                {actor.movies.map(movie => 
+                  <li>
+                    {movie}
+                  </li>)}
+              </ul>
+            </div>
+          ))}
     </div>
   );
 };
