@@ -5,6 +5,18 @@ const Movies = () => {
   return (
     <div>
         {/*{code here}*/}
+        <h1>Movies Page</h1>
+        {movies.map(movie => {
+          return <div>
+            {movie.title}
+            {movie.time}
+            {movie.genres.map(genre => {
+              return <ul>
+                {genre}
+              </ul>
+            })}
+          </div>
+        })}
     </div>
   );
 };
