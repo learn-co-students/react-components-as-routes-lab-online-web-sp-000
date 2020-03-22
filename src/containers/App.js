@@ -14,6 +14,13 @@ const App = (props) => {
   return (
     <Router>
       {/*{code here}*/}
+      <div>
+        <NavBar />
+        <Route path="/" />
+        <Route path="/movies" />
+        <Route path="/actors" />
+        <Route path="/directors" />
+      </div>
     </Router>
   );
 };
