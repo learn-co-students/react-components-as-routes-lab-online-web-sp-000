@@ -9,9 +9,11 @@ const Movies = () => {
         <div className="movie" key={movie.index}>
           Movie Title: {movie.title}
           Time: {movie.time}
-          {movie.genres.map(genre => 
-            <ul>{genre}</ul>
-          )}
+          <ul>
+            {movie.genres.map((genre, index) => 
+              <li key={index}>{genre}</li>
+            )}
+          </ul>
         </div>
       )}
     </div>

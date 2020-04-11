@@ -6,10 +6,13 @@ const Directors = () => {
     <div>
       <h1>Directors Page</h1>
       {directors.map((director, index) => 
-        <div className="director" key={director.index}>{director.name}
-          {director.movies.map(movie => 
-            <ul>{movie}</ul>
-          )}
+        <div className="director" key={index}
+          >Name: {director.name}
+          <ul>
+            {director.movies.map((movie, index) => 
+              <li key={index}>{movie}</li>
+            )}
+          </ul>
         </div>
       )}
     </div>

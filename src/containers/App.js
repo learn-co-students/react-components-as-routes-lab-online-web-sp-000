@@ -16,16 +16,12 @@ const App = (props) => {
       <div>
         <NavBar />
         <Route path="/">
-          <Home />
         </Route>
         <Route path="/actors">
-          <Actors />
         </Route>
         <Route path="/directors">
-          <Directors />
         </Route>
         <Route path="/movies">
-          <Movies />
         </Route>
       </div>
     </Router>
