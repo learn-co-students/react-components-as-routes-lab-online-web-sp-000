@@ -17,9 +17,6 @@ const App = (props) => {
       <div>
         <NavBar />
         <Switch>
-          <Route path="/">
-            <Home />
-          </Route>
           <Route path="/actors">
             <Actors />
           </Route>
@@ -28,6 +25,9 @@ const App = (props) => {
           </Route>
           <Route path="/movies">
             <Movies />
+          </Route>
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
       </div>
