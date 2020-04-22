@@ -9,3 +9,5 @@ const Home = () => {
 };
 
 export default Home;
+
+//render the text Home Page in a <h1>

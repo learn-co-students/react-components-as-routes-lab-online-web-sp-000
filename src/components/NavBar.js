@@ -10,3 +10,5 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+//render 4 <NavLink> components. They will be for /, /movies, /directors, /actors <-- in this order
