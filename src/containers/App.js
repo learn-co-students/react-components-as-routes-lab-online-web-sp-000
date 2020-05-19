@@ -15,10 +15,10 @@ const App = (props) => {
     <Router>
       <div>
         <NavBar />
-        <Route path="/" />
-        <Route path="/actors" />
-        <Route path="/directors" />
-        <Route path="/movies" />
+        <Route path="/" component={Home} />
+        <Route path="/actors" component={Actors}/>
+        <Route path="/directors" component={Directors}/>
+        <Route path="/movies" component={Movies}/>
       </div>
     </Router>
   );
