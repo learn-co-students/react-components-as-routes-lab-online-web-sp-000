@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
+  Switch,
   Route
 } from 'react-router-dom';
 import NavBar from '../components/NavBar';
@@ -13,7 +14,25 @@ import Movies from '../components/Movies';
 const App = (props) => {
   return (
     <Router>
-      {/*{code here}*/}
+      <div>
+        <NavBar />
+        <Switch>
+          <Route exact path="/">
+            <div>
+              <Home />
+            </div>
+          </Route>
+          <Route path="/actors">
+            <Actors />
+          </Route>
+          <Route path="/directors">
+            <Directors />
+          </Route>
+          <Route path="/movies">
+            <Movies />
+          </Route>
+        </Switch>
+      </div>
     </Router>
   );
 };
