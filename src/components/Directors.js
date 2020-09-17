@@ -5,7 +5,12 @@ const Directors = () => {
   return (
     <div>
       <h1>Directors Page</h1>
-      { directors.map((director) => <div className="director"><p>{directors.name}</p></div>) }
+      { 
+        directors.map((director) => <div className="director">
+        <p>{director.name}</p>
+        {director.movies.map((movie) => <p>{movie}</p>)}
+        </div>)
+      }
     </div>
   );
 }
