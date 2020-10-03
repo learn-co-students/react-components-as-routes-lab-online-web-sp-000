@@ -13,11 +13,13 @@ const Movies = () => {
             {movie.title}
             {movie.time}
             {console.log(movie.genres)}
-            {movie.genres.map(genre => {
-              <ul>
-                {genre}
-              </ul>
-            })}
+            <ul>
+              {movie.genres.map(genre => {
+                <li>
+                  {genre}
+                </li>
+              })}
+            </ul>
           </div>
         )}
 
