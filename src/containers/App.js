@@ -10,11 +10,15 @@ import Actors from '../components/Actors';
 import Directors from '../components/Directors';
 import Movies from '../components/Movies';
 
-
-const App = (props) => {
+const App = () => {
   return (
     <Router>
       <div>
+        <div>
+          <Route path="/navbar">
+            <NavBar />
+          </Route>
+        </div>
         <Route path="/">
           <Home />
         </Route>
@@ -24,11 +28,6 @@ const App = (props) => {
         <Route path="/directors">
           <Directors />
         </Route>
-        <div>
-          <Route path="/navbar">
-            <NavBar />
-          </Route>
-        </div>
         <Route path="/movies">
           <Movies />
         </Route>
@@ -38,3 +37,4 @@ const App = (props) => {
 };
 
 export default App
+

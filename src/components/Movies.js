@@ -8,23 +8,17 @@ const Movies = () => {
         <h1>
           Movies Page
         </h1>
-        {movies.map(movie =>           
-          <div>
+        {movies.map((movie, index) =>           
+          <div key={index}>
             {movie.title}
             {movie.time}
-            {console.log(movie.genres)}
             <ul>
-              {movie.genres.map(genre => {
-                <li>
-                  {genre}
-                </li>
-              })}
+              {movie.genres.map((genre, index) => (
+                <li key={index}>{genre}</li>
+              ))}
             </ul>
           </div>
         )}
-
-
-
     </div>
   );
 };
