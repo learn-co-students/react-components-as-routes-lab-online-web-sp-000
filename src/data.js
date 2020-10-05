@@ -14,6 +14,11 @@ let movies = [
     title: 'Jack Reacher: Never Go Back',
     time: 118,
     genres: ['Action', 'Adventure', 'Crime', 'Mystery', 'Thriller']
+  },
+  {
+    title: 'ready player one',
+    time: 119,
+    genres: ['Action', 'Adventure', 'Mystery', 'Thriller']
   }
 ]
 
@@ -48,6 +53,10 @@ let directors = [
   {
     name: 'Edward Zwick',
     movies: ['Jack Reacher: Never Go Back', 'Blood Diamon', 'The Siege']
+  },
+  {
+    name: 'Steven Spieldberg',
+    movies: ['back to the future', 'ET', 'AI']
   }
 ]
 
