@@ -1,10 +1,23 @@
+import { AssertionError } from 'chai';
 import React from 'react';
 import { actors } from '../data';
 
 const Actors = () => {
   return (
     <div>
-      {/*{code here}*/}
+      <h1>Actors Page</h1>
+      {/*make a new <div> for each actor. The <div> should contain the actor's name and a <ul> with a list of their movies.*/}
+      {actors.map((actor, index) => (
+        <div key={index}>
+          <h3>Name: {actor.name}</h3>
+          <p>Movies:</p>
+          <ul>
+            {actor.movies.map((movie, index) => (
+               <li key={index}>{movie}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </div>
   );
 };
