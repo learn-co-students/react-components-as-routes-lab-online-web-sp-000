@@ -2,14 +2,14 @@ import React from "react";
 import { directors } from "../data";
 
 const renderDirectors = (directors) => {
-  return directors.map((director) => {
+  return directors.map((director, index) => {
     return (
-      <div key={director.name}>
+      <div key={index}>
         <h2>{director.name}</h2>
         <h3>Movies:</h3>
         <ul>
-          {director.movies.map((movie) => {
-            return <li key={movie}>{movie}</li>;
+          {director.movies.map((movie, index) => {
+            return <li key={index}>{movie}</li>;
           })}
         </ul>
       </div>
