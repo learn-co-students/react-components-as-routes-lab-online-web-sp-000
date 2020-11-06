@@ -19,7 +19,7 @@ const App = (props) => {
         <NavBar />
       
         
-          <Route path="/" component={Home}>
+          <Route exact path="/" component={Home}>
             
           </Route>
           <Route path="/actors" component={Actors}>
