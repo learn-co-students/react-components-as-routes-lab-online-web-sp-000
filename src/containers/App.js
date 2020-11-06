@@ -19,17 +19,17 @@ const App = (props) => {
         <NavBar />
       
         
-          <Route path="/">
-            <Home />
+          <Route path="/" component={Home}>
+            
           </Route>
-          <Route path="/actors">
-            <Actors />
+          <Route path="/actors" component={Actors}>
+            
           </Route>
-          <Route path="/directors">
-            <Directors />
+          <Route path="/directors" component={Directors}>
+            
           </Route>
-          <Route path="/movies">
-            <Movies />
+          <Route path="/movies" component={Movies}>
+            
           </Route>
 
         
