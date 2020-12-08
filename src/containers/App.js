@@ -18,16 +18,16 @@ const App = (props) => {
         <div>
           <NavBar />
           <Switch>
-            <Route path="/">
+            <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/movies">
+            <Route exact path="/movies">
               <Movies />
             </Route>
-            <Route path="/directors">
+            <Route exact path="/directors">
               <Directors />
             </Route>
-            <Route path="/actors">
+            <Route exact path="/actors">
               <Actors />
             </Route>
           </Switch>
