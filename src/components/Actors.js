@@ -1,10 +1,19 @@
 import React from 'react';
 import { actors } from '../data';
 
+// The <div> should contain the actor's name and a <ul> with a list of their movies.
 const Actors = () => {
   return (
     <div>
-      {/*{code here}*/}
+      <h1>Actors Page</h1>
+        {actors.map((a)=> (
+          <div key={a.name}>
+            <ul>{a.name}
+              <li>{a.movies}</li>
+            </ul>
+          </div>
+        )
+        )}
     </div>
   );
 };
