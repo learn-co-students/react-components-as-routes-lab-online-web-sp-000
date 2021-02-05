@@ -3,9 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <div>
-      {/*{code here}*/}
-    </div>
+    "Te odio Ilse"
   );
 };
 
