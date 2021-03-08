@@ -16,8 +16,8 @@ const App = (props) => {
       {/*{code here}*/}
       <div>
           <NavBar />
+          {/* <Route path="/"/> */}
           <Route path="/" component={Home}/>
-          {/* <Route path="/home" component={Home}/> */}
           <Route path="/movies" component={Movies}/>
           <Route path="/directors" component={Directors}/>
           <Route path="/actors" component={Actors}/>
