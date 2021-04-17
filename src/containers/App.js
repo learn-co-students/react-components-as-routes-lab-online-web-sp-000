@@ -1,7 +1,8 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Route
+  Route,
+  Switch
 } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import Home from '../components/Home';
@@ -13,7 +14,15 @@ import Movies from '../components/Movies';
 const App = (props) => {
   return (
     <Router>
-      {/*{code here}*/}
+      <div className="routes">
+        <NavBar />
+        <Switch>
+          <Route path="/actors" component={Actors} />
+          <Route path="/directors" component={Directors} />
+          <Route path="/movies" component={Movies} />
+          <Route path="/" component={Home} /> 
+        </Switch>
+      </div>
     </Router>
   );
 };
