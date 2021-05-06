@@ -4,7 +4,20 @@ import { movies } from '../data';
 const Movies = () => {
   return (
     <div>
-        {/*{code here}*/}
+        <h1>Movies Page</h1>
+        { 
+          movies.forEach(movie => {
+            <div>
+              <p>{movie.title}</p>
+              <p>{movie.time}</p>
+              <ul>
+                { movie.genres.forEach(genre => {
+                  <li>{genre}</li>
+                }) }
+              </ul>
+            </div>
+          })
+        }
     </div>
   );
 };
