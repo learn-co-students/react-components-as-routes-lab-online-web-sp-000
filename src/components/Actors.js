@@ -4,7 +4,21 @@ import { actors } from '../data';
 const Actors = () => {
   return (
     <div>
-      {/*{code here}*/}
+      <h1>Actors Page</h1>
+      {
+        actors.forEach(actor => {
+          <div>
+            <p>{actor.name}</p>
+            <ul>
+              {
+                actor.movies.forEach(movie => {
+                  <li>{movie}</li>
+                })
+              }
+            </ul>
+          </div>
+        })
+      }
     </div>
   );
 };
