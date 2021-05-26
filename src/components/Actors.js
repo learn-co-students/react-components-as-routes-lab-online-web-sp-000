@@ -1,24 +1,25 @@
 import React from 'react';
 import { actors } from '../data';
 
-function generateActors(){
-  return actors.map(actor => {
-    <div key={actor.name} className='actor'>
-      {actor.name}
-      {actor.movies}
-    </div>
-  })
-}
-
 const Actors = () => {
   return (
     <div>
       <h1>
         Actors Page
       </h1>
-      <div className='actor-cards'>
-        {generateActors()}
+      {
+        actors.map((actor, index) => (
+        <div className='actor-cards' key={index}>
+        <h3>Name: {actor.name}</h3>
+        <h5>Movies: </h5>
+          <ul>
+            {
+              actor.movies.map((movie, index) => (
+                <li key={index}>{movie}</li>
+              ))}
+          </ul>
       </div>
+      ))}
     </div>
   );
 };
